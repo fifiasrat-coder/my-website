@@ -1,0 +1,59 @@
+/* Base */
+:root{
+  --green:#008000;
+  --dark:#1F2A44;
+  --bg:#ffffff;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#222;line-height:1.5}
+a{color:var(--green);text-decoration:none}
+
+/* Fade in */
+.fade-in{opacity:0;animation:fadeIn 800ms ease forwards}
+@keyframes fadeIn{to{opacity:1}}
+
+/* Header */
+.site-header{padding:30px 10px;text-align:center}
+.logo{width:160px;height:auto;display:block;margin:0 auto 10px;}
+
+/* Hero */
+.hero{padding:20px 16px 10px;text-align:center}
+.hero h1{color:var(--dark);font-size:28px;margin:6px 0 8px}
+.tagline{color:var(--muted);margin-bottom:12px}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;font-weight:700;cursor:pointer}
+.btn.primary{background:var(--green);color:#fff;border:none}
+.btn.primary:hover{background:#006400;box-shadow:0 6px 18px rgba(0,128,0,0.12)}
+
+/* Home photo */
+.home-photo{display:flex;justify-content:center;padding:18px}
+.home-image{width:60%;max-width:760px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.12);}
+
+/* Content sections */
+.content-section{max-width:900px;margin:24px auto;padding:0 18px;text-align:left}
+.content-section h2{color:var(--green);margin-bottom:8px}
+.services-list{list-style:none;padding-left:0}
+.services-list li{margin-bottom:10px}
+
+/* Contact */
+.contact-section{text-align:center}
+.contact-title{color:var(--green);text-align:center}
+.contact-meta{color:var(--muted);margin-bottom:12px}
+.contact-form{display:flex;flex-direction:column;gap:10px;max-width:420px;margin:0 auto}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:6px;border:1px solid #ccc;font-size:15px}
+.contact-form button{font-weight:700}
+
+/* Disclaimer */
+.disclaimer{font-size:0.95rem;color:#444;background:transparent;border-left:4px solid #f0f0f0;padding:12px;margin:22px auto;max-width:900px}
+
+/* Footer */
+.site-footer{background:var(--green);color:#fff;text-align:center;padding:14px 10px;margin-top:24px}
+
+/* Responsive */
+@media (max-width:768px){
+  .home-image{width:92%}
+  .logo{width:140px}
+  .hero h1{font-size:20px}
+  .contact-form{width:92%}
+}
